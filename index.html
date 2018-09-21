@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" type="styles/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Quiz board</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
       <div id="section1">
         <h1>Section 1 - (Personal Details.)</h1>
           <div class="form">
-            <form class="" action="index.html" method="post">
+            <form class="form" action="index.html" method="post">
               <label for="name1">First Name</label></br>
               <input type="text" name="" value=""required></br>
               <label for="name2">Second Name</label></br>
@@ -30,7 +30,7 @@
               <label for="admission">Admission Number</label></br>
               <input type="number" name="" value=""required></br>
               <label for="email">Email Address</label></br>
-              <input type="email" name="" value="" placeholder="Enter Email" required>
+              <input type="email" name="" value="" autocomplete="email" placeholder="Enter Email" required>
             </form>
           </div>
         </div>
@@ -45,39 +45,39 @@
                   What does var stand for in js?
                   </br>
                   <label id="q1" for="q1">
-                    <input type="radio" name="one" value="variable">Variable
+                    <input  type="radio" name="one" value="20">Variable
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="one" value="argument">Argument
+                  <label for="q1">
+                    <input type="radio" name="one" value="0">Argument
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="one" value="variation">Variation
+                  <label for="q1">
+                    <input type="radio" name="one" value="0">Variation
                   </label></br>
                 </li>
 
                 <li>
                   which sign represents jquery in js?</br>
                   <label id="q2" for="q2">
-                    <input type="radio" name="two" value="a">&
+                    <input type="radio" name="two" value="0">&
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="two" value="b">$
+                  <label for="q2">
+                    <input type="radio" name="two" value="20">$
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="two" value="c">@
+                  <label for="q2">
+                    <input type="radio" name="two" value="0">@
                   </label></br>
                 </li>
 
                 <li>
                   Which tag is used to link js to HTML</br>
                   <label id="q3" for="q3">
-                    <input type="radio" name="three" value="input">
+                    <input type="radio" name="three" value="0">input
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="three" value="label">
+                  <label for="q3">
+                    <input type="radio" name="three" value="0">label
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="three" value="script">
+                  <label for="q3">
+                    <input type="radio" name="three" value="20">script
                   </label></br>
                 </li>
 
@@ -85,36 +85,38 @@
                   Which is a Javascript library?
                   </br>
                   <label id="q4" for="q4">
-                    <input type="radio" name="four" value="bootstrap"><b>Bootstrap</b>
+                    <input type="radio" name="four" value="0">Bootstrap
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="four" value="jquery">JQuery
+                  <label for="q4">
+                    <input type="radio" name="four" value="20">jQuery
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="four" value="carousel">Carousel
+                  <label for="q4">
+                    <input type="radio" name="four" value="0">Carousel
                   </label></br>
                 </li>
 
                 <li>
                   Javascript makes webpages more interactive?</br>
                   <label id="q5" for="q5">
-                    <input type="radio" name="five" value="true">True
+                    <input type="radio" name="five" value="20">True
                   </label></br>
-                  <label for="britain">
-                    <input type="radio" name="five" value="false">False
+                  <label for="q5">
+                    <input type="radio" name="five" value="0">False
                   </label></br>
                 </li>
               </ol>
 
-              <input class="btn btn-primary"type="button" name="submit" value="Submit">
+              <input id="sub" class="btn btn-primary"type="button" name="submit" value="Submit">
             </form>
           </div>
 
           <div id="result" class="toggle">
-
+            <p>Your score is:<span id="results"></span></p>
           </div>
 
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src=js/scripts.js></script>
   </body>
 </html>
