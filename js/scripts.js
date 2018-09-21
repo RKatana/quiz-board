@@ -3,6 +3,8 @@ var score=function(q1,q2,q3,q4,q5){
   return (q1 + q2 + q3 + q4 + q5);
 }
 
+var section1=function
+
 //User interface logic
 $(document).ready(function() {
   $("#sub").click(function(event) {
