@@ -11,7 +11,7 @@ var section1=function(name1, name2, number, email){
 $(document).ready(function(){
   $("#check").click(function(event){
     event.preventDefault();
-    $("#section2").show();
+    // $(".hide").show();
     var name1=$("#name1").val();
     var name2=$("#name2").val();
     var number=$("#number").val();
@@ -22,10 +22,10 @@ $(document).ready(function(){
 
     if (confirm===section1){
       alert("Please ensure you fill all the required fields");
-      $("#section2").show();
+      $("#section2").show(toggle());
     }
     else{
-      $("section2").show();
+      $("#section2").show();
       alert("Proceed to section Two")
     }
   })
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $("input#check").click(function(){
-    $("#section2").show();
+    // $("#section2").show();
       $("#sub").click(function(event) {
         event.preventDefault();
         var q1 = parseInt($("input:radio[name=one]:checked").val());
