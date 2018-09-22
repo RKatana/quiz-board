@@ -10,18 +10,23 @@ var section1=function(name1, name2, number, email){
 //User interface logic
 $(document).ready(function(){
   $("#check").click(function(event){
+    $("#result").hide();
     event.preventDefault();
     var name1=$("#name1").val();
     var name2=$("#name2").val();
     var number=$("#number").val();
     var email=$("#email").val();
     var confirm=section1(name1,name2,number,email);
+    console.log(confirm)
 
-    if (confirm==section1){
+
+    if (confirm===section1){
       alert("Please ensure you fill all the required fields");
+      $("#section2").hide();
     }
     else{
       $("#section1").hide();
+      $("#result").hide();
       $("#section2").show();
       // alert("Proceed to section Two"
     }
@@ -45,7 +50,7 @@ $(document).ready(function() {
           $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
-          results.innerHTML=("Wonderful! Your Score is "+total);
+          results.innerHTML=("Congrats, proceed to core! Your Score is "+total);
         }
 
         else if(total<=79&&total>=70){
@@ -55,20 +60,28 @@ $(document).ready(function() {
           results.innerHTML=("Great job! Your Score is "+ total);
         }
 
-        else if(total<=70&&total>=50){
+        else if(total<=70&&total>=60){
           $("#section2").hide();
           $("#result").show();
           results.innerHTML=("Above average! Your Score is "+ total);
         }
 
-        else {
+        else if(total<60&&total>=0){
           $("#section2").hide();
           $("#result").show();
-          results.innerHTML=("Stop joking! Your Score is "+ total)
+          results.innerHTML=("Below average! Your Score is "+ total)
+        }
+        else{
+          $("#section2").hide();
+          $("#result").show();
+        results.innerHTML=("STOP Joking! Do the test...And remember to fill all sections: Iwinjo?")
         };
+
+
       });
   })
-  $("#result").click(function(){
+  $("#sub1").click(function(){
     $("#section1").show();
+    $("#result").hide();
   })
 });

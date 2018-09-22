@@ -1,8 +1,9 @@
 
-## Triangle Tracker
-### Author:
-Raphael Katana
+## Quiz Board
+### By Raphael Katana
 
+### Application Release Date:
+21st Sept 2018.
 
 ### Description:
 Quiz board is an app that allows a user to have a quick test on Javascript;
@@ -41,5 +42,7 @@ Noticed any bug?
 KIndly contact me on roduor41@gmail.com
 
 ### Legal:
+This Application is license under the MIT licence.
+Get more info on my github
 
 Copyright © 2018; RKatana.Inc.
