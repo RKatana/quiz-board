@@ -1,0 +1,13 @@
+.form>label{
+  color:green;
+  font-weight: bold;
+}
+.form>label:after{
+  content: " *";
+  color:red;
+  font-weight:bold;
+}
+
+button{
+
+}
