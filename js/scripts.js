@@ -45,19 +45,32 @@ $(document).ready(function() {
         var total = score(q1,q2,q3,q4,q5);
 
         if(total>=80){
+          $("#section1").hide();
+          $("#section2").hide();
+          $("#result").show();
           results.innerHTML=total;
         }
 
         else if(total<=79&&total>=70){
+          $("#section1").hide();
+          $("#section2").hide();
+          $("#result").show();
+
           results.innerHTML=("Great job! Your score is "+ total);
         }
 
         else if(total<=70&&total>=50){
-          console.log("Above average! Your score is "+ total)
+          $("#section1").hide();
+          $("#section2").hide();
+          $("#result").show();
+          results.innerHTML=("Above average! Your score is "+ total)
         }
 
         else {
-          console.log("Stop joking! Your score is "+ total)
+          $("#section1").hide();
+          $("#section2").hide();
+          $("#result").show();
+          results.innerHTML=("Stop joking! Your score is "+ total)
         };
 
 
