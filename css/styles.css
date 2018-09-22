@@ -9,13 +9,13 @@ nav>ul>li{
   display:inline-block;
   position:relative;
   text-align: center;
-  left:20px;
+  left:150px;
 }
 ul>li{
   padding:20px;
 }
 #section1{
-  display:none;
+  /* display:none; */
   border: 3px black;
   width:780px;
   border-radius: 10px;
@@ -24,13 +24,16 @@ ul>li{
   padding-bottom: 20px;
 }
 #section2{
-  /* display:none; */
+  display:none;
   padding-top:10px;
   border: 3px black;
   width:780px;
   border-radius: 10px;
   border-style: dotted;
   box-shadow: 3px -3px green;
+}
+#result{
+  display:none
 }
 p{
   font-size:x-large;

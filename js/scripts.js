@@ -16,17 +16,14 @@ $(document).ready(function(){
     var number=$("#number").val();
     var email=$("#email").val();
     var confirm=section1(name1,name2,number,email);
-    console.log(confirm)
 
-
-    if (confirm===section1){
+    if (confirm==section1){
       alert("Please ensure you fill all the required fields");
-      $("#section2").show(toggle());
     }
     else{
       $("#section1").hide();
       $("#section2").show();
-      // alert("Proceed to section Two")
+      // alert("Proceed to section Two"
     }
   })
 })
@@ -48,32 +45,30 @@ $(document).ready(function() {
           $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
-          results.innerHTML=total;
+          results.innerHTML=("Wonderful! Your Score is "+total);
         }
 
         else if(total<=79&&total>=70){
-          $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
 
-          results.innerHTML=("Great job! Your score is "+ total);
+          results.innerHTML=("Great job! Your Score is "+ total);
         }
 
         else if(total<=70&&total>=50){
-          $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
-          results.innerHTML=("Above average! Your score is "+ total)
+          results.innerHTML=("Above average! Your Score is "+ total);
         }
 
         else {
-          $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
-          results.innerHTML=("Stop joking! Your score is "+ total)
+          results.innerHTML=("Stop joking! Your Score is "+ total)
         };
-
-
       });
+  })
+  $("#result").click(function(){
+    $("#section1").show();
   })
 });
