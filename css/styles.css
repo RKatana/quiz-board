@@ -16,7 +16,7 @@ ul>li{
   padding:20px;
 }
 #section1{
-  /* display:none; */
+  background-color: #f6f0f0;
   border: 3px black;
   width:780px;
   border-radius: 10px;
@@ -25,8 +25,10 @@ ul>li{
   padding-bottom: 20px;
 }
 #section2{
+  background-color:#8feeff;
   display:none;
   padding-top:10px;
+  padding-bottom: 20px;
   border: 3px black;
   width:780px;
   border-radius: 10px;
@@ -50,6 +52,11 @@ ul>li{
   text-align:center;
   position:relative;
   left:80px;
+  font-family: monospace;
+  padding-bottom: 20px;
+}
+#result>#input{
+  padding-top: 20px;
 }
 span{
   color:red;
@@ -65,7 +72,7 @@ span{
 p{
   font-size:x-large;
   font-style:oblique;
-  color:coral;
+  color:#210cffcc;
 }
 li{
   font-size:xx-large;
@@ -78,7 +85,7 @@ li{
 .form>label{
   color:green;
   font-weight: bold;
-  font-size:large;
+  font-size:x-large;
 }
 .form>label:after{
   content: " *";
