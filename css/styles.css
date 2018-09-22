@@ -1,3 +1,18 @@
+.container{
+  border: 3px black;
+  width:800px;
+  border-radius: 10px;
+  border-style: dotted;
+  box-shadow: 3px -3px green;
+}
+#section2{
+  display:none;
+}
+
+.h1{
+  text-shadow:-3px 1px black;
+  text-align: center;
+}
 .form>label{
   color:green;
   font-weight: bold;
