@@ -47,6 +47,7 @@ $(document).ready(function() {
         var total = score(q1,q2,q3,q4,q5);
 
         if(total>=80){
+          $("#contacts").hide();
           $("#section1").hide();
           $("#section2").hide();
           $("#result").show();
@@ -54,6 +55,7 @@ $(document).ready(function() {
         }
 
         else if(total<=79&&total>=70){
+          $("#contacts").hide();
           $("#section2").hide();
           $("#result").show();
 
@@ -61,17 +63,20 @@ $(document).ready(function() {
         }
 
         else if(total<=70&&total>=60){
+          $("#contacts").hide();
           $("#section2").hide();
           $("#result").show();
           results.innerHTML=("Above average! Your Score is "+ total);
         }
 
         else if(total<60&&total>=0){
+          $("#contacts").hide();
           $("#section2").hide();
           $("#result").show();
           results.innerHTML=("Below average! Your Score is "+ total)
         }
         else{
+          $("#contacts").hide();
           $("#section2").hide();
           $("#result").show();
         results.innerHTML=("STOP Joking! Do the test...And remember to fill all sections: Iwinjo?")
@@ -81,7 +86,7 @@ $(document).ready(function() {
       });
   })
   $("#sub1").click(function(){
-    $("#section1").show();
+    $("#section2").show();
     $("#result").hide();
   })
 });

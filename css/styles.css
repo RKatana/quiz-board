@@ -77,10 +77,17 @@ p{
 li{
   font-size:xx-large;
 }
+#section1>h1{
+  background-color: coral;
+}
+#section2>h1{
+  background-color: coral;
+}
 
 .h1{
   text-shadow:-3px 1px black;
   text-align: center;
+  background-color: none;
 }
 .form>label{
   color:green;

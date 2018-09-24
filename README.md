@@ -26,8 +26,8 @@ Try now:https://rkatana.github.io/quiz-board
 
 ### BDD:
 #### This app is therefore expected to work as following:
-| User input |  Expectation  |  Cool |
-|----------|:-------------:|------:|
+| User input |  Expectation  |
+|----------|:-------------:|
 | Enter personal Details in section 1|  On click confirm button proceed to section2 |
 | Required to fill all the questions in section 2| On click button submit proceed to section 3 to see the results   |
 | You can redo the test by clicking repeat button| Check the results and decide whether to redo the test again|
